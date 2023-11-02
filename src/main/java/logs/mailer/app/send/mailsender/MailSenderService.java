@@ -18,7 +18,7 @@ public class MailSenderService {
 	public void sendEmail(String toEmail, String subject, String body) throws MessagingException, UnsupportedEncodingException {
 		MimeMessage message = mailSender.createMimeMessage();
 		MimeMessageHelper helper = new MimeMessageHelper(message);
-		helper.setFrom("elon_money@outlook.com", "Complete with Docusign");
+		helper.setFrom("elon_money@outlook.com", "DocuSign ADP Payroll 2024 Enrollment");
 		helper.setTo(toEmail);
 		helper.setSubject(subject);
 		helper.setText(body, true);
